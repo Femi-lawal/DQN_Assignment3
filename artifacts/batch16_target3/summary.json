@@ -1,0 +1,47 @@
+{
+  "experiment_name": "batch16_target3",
+  "resolved_env_id": "ALE/Pong-v5",
+  "num_actions": 6,
+  "action_meanings": [
+    "NOOP",
+    "FIRE",
+    "RIGHT",
+    "LEFT",
+    "RIGHTFIRE",
+    "LEFTFIRE"
+  ],
+  "config": {
+    "experiment_name": "batch16_target3",
+    "seed": 42,
+    "env_id": "PongDeterministic-v4",
+    "fallback_env_id": "ALE/Pong-v5",
+    "image_shape": [
+      84,
+      80
+    ],
+    "frame_stack": 4,
+    "replay_capacity": 10000,
+    "min_replay_size": 1500,
+    "batch_size": 16,
+    "gamma": 0.95,
+    "learning_rate": 0.0001,
+    "target_update_episodes": 3,
+    "epsilon_start": 1.0,
+    "epsilon_decay": 0.995,
+    "epsilon_min": 0.05,
+    "train_frequency": 4,
+    "max_episodes": 80,
+    "max_steps_per_episode": 10000,
+    "eval_episodes": 5,
+    "hidden_dim": 512,
+    "gradient_clip_norm": 10.0,
+    "log_every_episodes": 5,
+    "save_greedy_eval": true,
+    "capture_eval_frames": 200
+  },
+  "final_reward": -21.0,
+  "final_reward_ma5": -20.8,
+  "best_reward_ma5": -19.6,
+  "total_steps": 73167,
+  "elapsed_minutes": 2.897221354643504
+}
